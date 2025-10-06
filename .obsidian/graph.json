@@ -5,7 +5,7 @@
   "showAttachments": true,
   "hideUnresolved": false,
   "showOrphans": true,
-  "collapse-color-groups": true,
+  "collapse-color-groups": false,
   "colorGroups": [
     {
       "query": "path:uczelnia/1_semestr/algorytmy  ",
@@ -27,6 +27,20 @@
         "a": 1,
         "rgb": 11392604
       }
+    },
+    {
+      "query": "path:uczelnia/1_semestr/programowanie  ",
+      "color": {
+        "a": 1,
+        "rgb": 6084188
+      }
+    },
+    {
+      "query": "path:uczelnia/1_semestr/wprowadzenie_do_informatyki  ",
+      "color": {
+        "a": 1,
+        "rgb": 6084269
+      }
     }
   ],
   "collapse-display": true,
@@ -39,6 +53,6 @@
   "repelStrength": 13.4375,
   "linkStrength": 0.953125,
   "linkDistance": 148,
-  "scale": 1.0343660831319164,
+  "scale": 0.6252124604911646,
   "close": true
 }
