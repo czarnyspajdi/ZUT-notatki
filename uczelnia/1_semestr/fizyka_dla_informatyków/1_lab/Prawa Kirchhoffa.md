@@ -1,0 +1,2 @@
+1. Suma natężeń wpływających do obwodu jest równa sumie natężeń wypływających
+2. Na elementach podłączonych równolegle będzie to samo napięcie. Na elementach podłączonych szeregowo suma napięć będzie równa napięciu zasilającemu.

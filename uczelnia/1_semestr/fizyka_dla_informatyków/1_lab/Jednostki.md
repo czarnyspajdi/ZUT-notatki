@@ -1,0 +1,11 @@
+- 10^1 - decy
+- 10^2 - hekto
+- 10^3 - kilo
+- 10^6 - mega
+- 10^9 - giga
+- 10^12 - tera
+
+- 10^-3 - mili
+- 10^-6 - mikro
+- 10^-9 - nano
+- 10^-12 - piko

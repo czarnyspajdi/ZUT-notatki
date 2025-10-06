@@ -1,0 +1,7 @@
+- elementy [[RLC]]
+- [[Jednostki]]
+- [[Oporniki]]
+- [[Prawo omha]]
+- [[Prawa Kirchhoffa]]
+- [[Prowadzący]]
+- [[uczelnia/1_semestr/fizyka_dla_informatyków/1_lab/Zasady|Zasady]]

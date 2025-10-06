@@ -1,0 +1,1 @@
+- Krysicki Włodarski, Analiza matematyczna w zadaniach część 1i 2, PWN

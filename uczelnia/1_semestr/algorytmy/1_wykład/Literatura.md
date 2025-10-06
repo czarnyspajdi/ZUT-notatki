@@ -1,0 +1,8 @@
+- Literatura(podstawowa):
+-   - the design and analysis of algorithms (Addison Wesley)
+-   - the algorithm design manual (Steven S Skien)
+- Literatura(dodatkowa):
+-   - Algorytmy i struktury danych (Alfred V Aho, John E. Hopcroft, Jeffrey D. Ullman)
+-   - Data structures and algorithms with python(Lee, Kent D. Hubbard, Steve)
+-   - Algorytmy w C (Kyle Loudon)
+-   - Klasyka Informatyki (Thomas H. Cormen, Charles E. Leiserson, Ronald L. Rivest, Clifford Stein)

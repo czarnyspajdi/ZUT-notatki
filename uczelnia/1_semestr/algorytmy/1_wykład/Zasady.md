@@ -1,0 +1,5 @@
+- Wykłady __nie__ są obowiązkowe!!!!!!
+- 3 terminy zaliczenia(tylko kogo mamy zaliczyć?)
+- 51% poprawnych - gwarancja zaliczenia
+- aktywność na wykładach
+- Konsultacje środa 10:15-12:00 pokój 108
