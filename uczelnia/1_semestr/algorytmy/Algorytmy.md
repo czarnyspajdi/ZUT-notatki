@@ -1,1 +1,1 @@
-[[uczelnia/1_semestr/algorytmy/1_wykład/Pierwszy wykład]]
+[[uczelnia/1_semestr/algorytmy/1_wykład/1 wykład]]

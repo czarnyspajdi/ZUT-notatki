@@ -1,1 +1,1 @@
-[[uczelnia/1_semestr/matematyka_ze_statystyką/1_wykład/Pierwszy wykład|Pierwszy wykład]]
+[[uczelnia/1_semestr/matematyka_ze_statystyką/1_wykład/1 wykład|1 wykład]]

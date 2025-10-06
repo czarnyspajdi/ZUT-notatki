@@ -1,0 +1,1 @@
+- Zaliczenie wykładów na końcu semestru
