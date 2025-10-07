@@ -1,0 +1,5 @@
+- Pokój 204
+- Wykłady są obowiązkowe (xd)(ale nikt nie będzie sprawdzał obecności, tylko wiedza jest wymagana)(czyli w sumie to nie są obowiązkowe)
+- Zaliczenie będzie oddzielnie z:
+-   - fizykami
+-   - informatykami

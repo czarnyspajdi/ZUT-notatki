@@ -1,0 +1,6 @@
+[[../1_lab/Prawo omha|Prawo omha]]
+[[../1_lab/Prawa Kirchhoffa|Prawa Kirchhoffa]]
+[[Elektrony walencyjne]]
+[[Rodzaje materiałów]]
+[[Napięcie]]
+[[Twierdzenia Thevina i Nortona]]

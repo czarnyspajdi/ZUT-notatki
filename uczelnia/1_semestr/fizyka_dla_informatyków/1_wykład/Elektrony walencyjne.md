@@ -1,0 +1,4 @@
+- To elektrony niezwiązane z atomem, mogą przemieszczać się pomiędzy nimi.
+- Elektrony są wolne w półprzewodnikach.
+- [[Dziura elektronowa]]
+- Przewodnictwo jonowe - całe cząsteczki się przemieszczają
