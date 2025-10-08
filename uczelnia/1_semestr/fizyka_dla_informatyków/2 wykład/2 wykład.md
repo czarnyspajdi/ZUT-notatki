@@ -1,0 +1,1 @@
+[[Wzory na prędkość, pozycję, przyspieszenie]]
