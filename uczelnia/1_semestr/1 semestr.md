@@ -3,3 +3,4 @@
 [[Fizyka dla informatyków]]
 [[Programowanie]]
 [[Algebra liniowa]]
+[[wprowadzenie_do_informatyki/Wprowadzenie do informatyki|Wprowadzenie do informatyki]]

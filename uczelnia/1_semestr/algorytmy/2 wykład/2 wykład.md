@@ -1,0 +1,7 @@
+[[Ramię robota]]
+[[Schemat tworzenia algorytmu]]
+[[Podstawy rozwiązywania problemów]]
+[[Algorytmy sortowania]]
+[[Algorytmy wyszukiwania]]
+[[Przetwarzanie napisów]]
+[[Problemy grafowe]]

@@ -1,0 +1,3 @@
+- Przesuwanie funkcji o wektor (dość proste, nie będę się opisywał)
+- [[Złożenie funkcji]]
+- [[Funkcja odwrotna]]

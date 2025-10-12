@@ -1,0 +1,1 @@
+Podnosimy f^-1
