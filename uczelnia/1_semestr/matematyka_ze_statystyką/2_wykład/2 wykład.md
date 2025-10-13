@@ -1,0 +1,2 @@
+[[Szeregi liczbowe]]
+[[Funkcje]]
