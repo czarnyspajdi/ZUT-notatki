@@ -1,0 +1,1 @@
+Taka droga pomiędzy elementami grafu, gdzie nie powtarzamy jednej ścieżki i kończymy tam, gdzie zaczęliśmy.

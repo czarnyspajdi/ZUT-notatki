@@ -1,0 +1,1 @@
+Najpierw sortujemy, a potem wyszukujemy.

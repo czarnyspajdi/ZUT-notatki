@@ -1,0 +1,2 @@
+- [[Wyszukiwanie sekwencyjne]]
+- [[Wyszukiwanie binarne]]

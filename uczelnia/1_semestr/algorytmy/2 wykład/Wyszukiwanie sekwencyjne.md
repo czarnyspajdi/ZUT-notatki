@@ -1,0 +1,1 @@
+Porównujemy kolejne wartości, aż znajdziemy.
