@@ -140,6 +140,7 @@ $$u(\alpha) = \alpha \cdot \sqrt{0.0004} = 0.19 \cdot 10^{-6} \, K^{-1}$$
 
 ## 4. Wnioski
 1. Na podstawie przeprowadzonych obliczeń wyznaczono współczynniki liniowej rozszerzalności cieplnej dla badanych materiałów. Otrzymane wartości nie są jednak zgodne ilościowo z danymi tablicowymi — w szczególności dla glinu i mosiądzu różnice przekraczają 60–80%.
-2. Analiza niepewności wykazała, że niepewności losowe oraz dokładność zastosowanych przyrządów pomiarowych są niewielkie i nie tłumaczą zaobserwowanych rozbieżności względem wartości tablicowych. Wskazuje to na obecność istotnego błędu systematycznego.
-3. Najprawdopodobniejszą przyczyną zaniżenia wyników jest nieuwzględnienie charakterystyki układu pomiarowego wydłużenia, w szczególności ewentualnego przełożenia mechanicznego pomiędzy rzeczywistym wydłużeniem próbki a wskazaniem czujnika. Skutkiem tego zmierzona wartość Δl była mniejsza od rzeczywistej.
-4. Spośród badanych materiałów wynik uzyskany dla stali wykazuje najmniejszą rozbieżność względem wartości tablicowej, jednak również on nie mieści się w granicach niepewności pomiarowej i obarczony jest błędem.
+2. Analiza niepewności wykazała, że niepewności losowe oraz dokładność zastosowanych przyrządów pomiarowych są niewielkie i nie tłumaczą zaobserwowanych rozbieżności względem wartości tablicowych.
+3. Możliwą przyczyną zaniżenia wyników jest nieuwzględnienie charakterystyki układu pomiarowego wydłużenia, w szczególności ewentualnego przełożenia mechanicznego pomiędzy rzeczywistym wydłużeniem próbki a wskazaniem czujnika. Skutkiem tego zmierzona wartość Δl była mniejsza od rzeczywistej. Niewykluczonym jest również, że błędy te są skutkiem oporu mechanicznego podczas wydłużania się pręta. Oznaczałoby to zajście błędu systematycznego.
+4. Inną możliwą przyczyną jest błąd gruby polegający na błędnym odczycie pomiaru lub jego przedwczesnym spisaniem, gdy pręt nie był jeszcze ogrzany na całej swojej długości.
+5. Spośród badanych materiałów wynik uzyskany dla stali wykazuje najmniejszą rozbieżność względem wartości tablicowej, jednak również on nie mieści się w granicach niepewności pomiarowej i obarczony jest błędem.
