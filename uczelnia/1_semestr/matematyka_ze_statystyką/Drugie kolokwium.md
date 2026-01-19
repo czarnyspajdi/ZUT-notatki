@@ -79,3 +79,13 @@ $$
 -\frac{4}{5}\sqrt[4]{(3 + \operatorname{ctg}x)^5} + C
 $$
 I to jest nasz wynik.
+## Całkowanie przez części
+Bardzo schematyczna metoda. Jak mamy taką całkę, że jej ni chuja nie da się policzyć to:
+- bierzemy część całki i oznaczamy ją jako $u$. To różniczkujemy.
+- bierzemy drugą część i oznaczamy ją jako $v'$. To całkujemy.
+- $u \cdot v'$ musi dawać nam te oryginalną całkę
+- podstawiamy do wzoru, który wygląda tak:
+$$
+u \cdot v - \int u' \cdot v
+$$
+- Powtarzamy aż do skutku! (można by rzec, że to algorytm rekurencyjny? być może…)
