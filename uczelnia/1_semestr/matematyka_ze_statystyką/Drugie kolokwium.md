@@ -89,3 +89,74 @@ $$
 u \cdot v - \int u' \cdot v
 $$
 - Powtarzamy aż do skutku! (można by rzec, że to algorytm rekurencyjny? być może…)
+## Całki z pierwiastkami
+Esencjonalnie trzeba zawsze sprowadzić do dwóch form:
+$$
+\begin{align}
+\int\sqrt{a^2 - x^2} dx \\
+\int\sqrt{x^2 + a} dx\\
+\end{align}
+$$
+Jak już mamy takie  gówno to liczymy ze wzoru.
+
+Jak to tak przekształcić? Pewnie jakimiś wzorami skróconego mnożenia, dodaniem czegoś, odjęciem. Takie szmery bajery.
+## Całki wymierne
+Tutaj też wchodzą wzory. (nie chce mi sie ich przepisywać xd)
+![](../../../media/Pasted%20image%2020260120192400.png)
+
+Trzeba przekształcić wielomian do takiej formy. Robimy to albo licząc deltę, przekształcając w formę kanoniczną albo jakimiś innymi wymyślnymi metodami.
+
+Jak mamy w mianowniku funkcje co się ją da rozłożyć to robimy taki myk, że rozbijamy na dwa ułamki z licznikiem A i B, a potem wyliczamy te liczniki układem równań.
+
+np.
+$$
+\begin{aligned}
+% 1. Uproszczenie całki
+\int \frac{5x-2}{2x^2 - 10x + 8} \,dx &= \frac{1}{2} \int \frac{5x-2}{x^2 - 5x + 4} \,dx \\[1em]
+
+% 2. Miejsca zerowe mianownika
+x^2 - 5x + 4 &= 0 \implies \Delta = 9, \quad x_1 = 1, \ x_2 = 4 \\
+x^2 - 5x + 4 &= (x-1)(x-4) \\[1em]
+
+% 3. Rozkład na ułamki proste
+\frac{5x-2}{(x-1)(x-4)} &= \frac{A}{x-1} + \frac{B}{x-4} \quad | \cdot (x-1)(x-4)\\
+5x - 2 &= A(x-4) + B(x-1) \\
+5x - 2 &= Ax - 4A + Bx - B \\
+5x - 2 &= (A+B)x + (-4A-B) \\[1em]
+
+% 4. Układ równań (porównanie współczynników)
+&\begin{cases}
+A + B = 5 \\
+-4A - B = -2
+\end{cases} \\
+\text{Dodajemy stronami: } \quad -3A &= 3 \implies A = -1 \\
+\text{Podstawiamy A: } \quad -1 + B &= 5 \implies B = 6 \\[1em]
+
+% 5. Obliczenie całki
+I &= \frac{1}{2} \int \left( \frac{-1}{x-1} + \frac{6}{x-4} \right) \,dx \\
+&= \frac{1}{2} \left( -\ln|x-1| + 6\ln|x-4| \right) + C \\
+&= -\frac{1}{2}\ln|x-1| + 3\ln|x-4| + C
+\end{aligned}
+$$
+Takie coś xdd
+
+# Obliczyć całki oznaczone
+Całki oznaczone różnią sie od nieoznaczonych tym, że jak już się już obliczy to trzeba jeszcze podstawić górna i dolną granicę i odjąć drugie od pierwszego.
+$$
+\begin{aligned}
+I &= \int_{0}^{4} \frac{e^{\sqrt{x}}}{\sqrt{x}} \,dx \\[1em]
+
+t &= \sqrt{x} \implies dt = \frac{1}{2\sqrt{x}} \,dx \\
+2\,dt &= \frac{1}{\sqrt{x}} \,dx \\[1em]
+
+x &= 0 \implies t = \sqrt{0} = 0 \\
+x &= 4 \implies t = \sqrt{4} = 2 \\[1em]
+
+I &= \int_{0}^{2} e^t \cdot 2 \,dt \\
+&= 2 \int_{0}^{2} e^t \,dt \\
+&= 2 \left[ e^t \right]_{0}^{2} \\
+&= 2 (e^2 - e^0) \\
+&= 2(e^2 - 1)
+\end{aligned}
+$$
+**Uwaga**, jeśli liczysz przez podstawienie to miej na baczności, że podstawiamy granice dla całego wyrażenia!!
