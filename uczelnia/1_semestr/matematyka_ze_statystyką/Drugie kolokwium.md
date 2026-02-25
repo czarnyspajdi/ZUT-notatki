@@ -160,3 +160,12 @@ I &= \int_{0}^{2} e^t \cdot 2 \,dt \\
 \end{aligned}
 $$
 **Uwaga**, jeśli liczysz przez podstawienie to miej na baczności, że podstawiamy granice dla całego wyrażenia!!
+
+# Obliczyć pole ograniczone wykresem
+- Przyrównać obie funkcje do siebie
+- policzyć miejsca zerowe tego co wyszło – to sa granice całki
+- liczymy p i q paraboli
+- pod całką odejmujemy funkcje wyżej od tej niżej
+- obliczamy
+- wynik 
+- profit

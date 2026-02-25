@@ -185,8 +185,29 @@ $$u(\bar{w}_1) = \sqrt{u_A^2 + u_B^2} = \sqrt{2.66^2 + 1.87^2} = \mathbf{3.25 \%
 - **Metoda tabelaryczna ($w_2$):** $$67.60 \%$$
 - **Higrometr włosowy ($w_3$):** $$35 \% \pm 2.89 \%$$
 - **Higrometr pojemnościowy ($w_4$):** $$30.5 \% \pm 1.44 \%$$
+- **Higrometr pojemnościowy (pomiar z 16.01.2026r.):** 
+$$
+\begin{align}
+46.1 \% \pm 1.44 \% \\
+t = 21.3^\circ C \\
+b = 1015 hPa
+\end{align}
+$$
+
+> * **Błąd względny dla $w_{1}$:**
+$$
+\delta=\frac{|67.72 - 46.1|}{46.1} = \frac{21.62}{46.1} \approx 0.4690 = 46.90\%
+$$
+> * **Błąd względny dla $w_{2}$:**
+$$
+\delta=\frac{|67.60 - 46.1|}{46.1} = \frac{21.50}{46.1} \approx 0.4664 = 46.64\%
+$$
+> * **Błąd względny dla $w_{3}$:**
+$$
+\delta=\frac{|35 - 46.1|}{46.1} = \frac{11.1}{46.1} \approx 0.2408 = 24.08\%
+$$
 # Wnioski
-- Wyniki dla higrometrów oraz psychrometru i tablic psychrometrycznych drastycznie się od siebie różnią. Higrometr włosowy wskazywał 35%, pojemnościowy 30.5% podczas, gdy psychrometr Assmana wskazał 67.72%, a tablica psychrometryczna pokazała 67.60%.
-- Takie rozbieżności mogą wynikać z niedoskonałości przyrządów. Mówimy wtedy o błędzie systematycznym.
-- Należy mieć na uwadze, że ekran higrometru pojemnościowego był uszkodzony i mogło to wpłynąć na poprawny odczyt wilgotności powietrza.
-- Higrometr włosowy mógł być rozkalibrowany co wpłynęło negatywnie na wynik.
+- **Rozbieżność wyników:** Pomiary wykazały istotne różnice względem wartości referencyjnej (46.1%). Psychrometr Assmanna zawyżył wynik (67.7%), natomiast higrometry włosowy (35%)  go zaniżył.
+- **Błąd psychrometru:** Największy błąd względny (47%) wystąpił w metodzie psychrometrycznej. Zawyżona wilgotność wynikała ze zbyt małej różnicy temperatur ($t_{s}​−t_{m}$​), co sugeruje **błąd systematyczny**: niedostateczne zwilżenie knota lub niesprawny wentylator, co uniemożliwiło poprawne parowanie.
+- **Błąd higrometrów:** Zaniżone wskazania higrometrów bezpośrednich mogą wynikać z ich rozkalibrowania oraz widocznego uszkodzenia elektroniki higrometru pojemnościowego.
+- **Podsumowanie:** Niska niepewność statystyczna (3.25%) świadczy o wysokiej powtarzalności pomiarów. Końcowe odchylenia nie wynikają z błędów odczytu, lecz z niedoskonałości technicznej i błędów systematycznych przyrządów.

@@ -4,7 +4,6 @@
 ## Suma szeregu
 Granice szeregu nazywamy jego sumą.
 Czyli lim Xn = (sigma)^(nieskończoność) n=1 Xn
-
 Dla ciągu Xn określamy ciąg Sn wzorem Sn = (sigma)^n i=1 Xi
 wtedy
 S1 = X1

@@ -43,8 +43,6 @@ def interpolacja(t_val):
 def get_u_instr(dokladnosc):
     return dokladnosc / math.sqrt(3)
 
-# --- GENERATOR PLIKU OBSIDIAN ---
-
 
 if __name__ == "__main__":
     # Stałe globalne do obliczeń
