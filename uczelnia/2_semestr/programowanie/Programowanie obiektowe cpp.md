@@ -1,0 +1,6 @@
+- Podstawy
+- Rozbijanie na pliki
+- Importowanie/includowanie
+- Przeładowywanie funkcji
+- Alokowanie pamięci 
+- Tablice
