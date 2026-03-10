@@ -1,0 +1,4 @@
+- Formą zdaniową nazywamy zdanie, które staje się zdaniem logicznym po zamianie niewiadomych na obiekty z określonej dziedziny.
+- Kwantyfikatory
+- Dowody twierdzeń
+- Zaprzeczanie
