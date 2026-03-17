@@ -6,9 +6,9 @@ private:
   int nrAlbumu;     // pole prywatne
 
 public:
-  Student(std::string imie, int nrAlbumu)
-      : imie(imie), nrAlbumu(nrAlbumu) {} // konstruktor
-  void pokaz() {                          // publiczna metoda
+  Student(std::string imie, int nrAlbumu) // konstruktor
+      : imie(imie), nrAlbumu(nrAlbumu) {}
+  void pokaz() { // publiczna metoda
     std::cout << imie << " " << nrAlbumu << std::endl;
   }
 };
