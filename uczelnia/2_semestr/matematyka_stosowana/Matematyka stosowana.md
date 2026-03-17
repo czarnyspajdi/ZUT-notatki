@@ -1,1 +1,2 @@
 [[Prawdopodobieństwo]]
+[[Standaryzacja]]

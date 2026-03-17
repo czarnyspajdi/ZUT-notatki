@@ -1,0 +1,7 @@
+[Matematyka dyskretna](matematyka_dyskretna/Matematyka%20dyskretna.md)
+[Matematyka stosowana](matematyka_stosowana/Matematyka%20stosowana.md)
+[Metody numeryczne](metody_numeryczne/Metody%20numeryczne.md)
+[Prawo podatkowe](prawo_podatkowe/Prawo%20podatkowe.md)
+[Programowanie](programowanie/Programowanie.md)
+[Python](python/Python.md)
+[Technika cyfrowa](techniki_cyfrowe/Technika%20cyfrowa.md)
