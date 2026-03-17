@@ -1,4 +1,4 @@
-#include <iostream>
+#include <string>
 
 class Samochod {
 private:
@@ -6,10 +6,7 @@ private:
   int rok;
 
 public:
-  Samochod(std::string m, int r) {
-    marka = m;
-    rok = r;
-  }
+  Samochod(std::string m, int r) : marka(m), rok(r) {}
 };
 
 int main() {}
