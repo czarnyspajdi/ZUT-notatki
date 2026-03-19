@@ -10,6 +10,8 @@ public:
   }
 
   void pokaz() { std::cout << '(' << x << ',' << y << ')' << std::endl; }
+
+  ~Punkt() { std::cout << "Niscze punkt" << std::endl; }
 };
 
 int main() {

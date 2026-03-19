@@ -40,3 +40,29 @@ Rozkład LU: bierzemy macierz, przyrównujemy ją do macierzy $L * U$, a potem p
 Rozkład QR.
 
 Układy równoważne: układ równań wynika z innego układu przez skończony ciąg operacji elementarnych.
+
+# Rozwiązywanie równań liniowych
+## Metody dokładne
+- Wzory cramera.
+- Eliminacja gaussa
+- Eliminacji gaussa-crouta
+
+Na zaliczeniu nie będzie eliminacji gaussa.
+Czym się różni pełna od częściowej? Jakie dwa etapy. Co jak natrafimy na $0$?
+Takie rzeczy na zaliczeniu.
+
+Rozkład QR i LU będzie na zaliczeniu.
+
+## Metody przybliżone (iteracyjne)
+- metody kaczmarza
+- metoda richardsona
+- metoda jaccobiego
+- matoda gausa-seidela
+
+ - przybliżone obliczenia
+ - zatrzymują się przy osiągnięciu tolerancji błędu
+ - rozwiązanie zawsze obarczone błędem
+ - im gorzej uwarunkowana macierz tym gorsze rozwiązanie
+ - stabilne
+ - błędy zaokgrągleń są minimalizowane w kolejnych iteracjach
+ - szybsze niż metody dokładne
