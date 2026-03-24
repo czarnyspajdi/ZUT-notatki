@@ -7,3 +7,7 @@ Postać standardowa funkcji boolowskiej może być sumacyjna lub iloczynowa, mog
 [[Minimalizacja funkcji logicznych]]
 
 [[Tablica Graya]]
+
+Nudy gówno tralalalalalal
+
+rlc sratata

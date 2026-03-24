@@ -115,3 +115,10 @@ Wartość dystrybuanty w punkcie x to jest całka, bo to pole pod wykresem.
 
 ## Rozkład wykladniczy
 Funkcja gaussa.
+
+# Wektory losowe i niezależność zmiennych losowych
+
+Dystrybuanta wektora losowego
+
+Wektor losowy typu skokowego
+
