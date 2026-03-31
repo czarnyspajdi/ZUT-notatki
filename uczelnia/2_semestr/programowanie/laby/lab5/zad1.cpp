@@ -6,7 +6,7 @@
 int main() {
   int *ptr = nullptr; // deklarujemy wskaźnik wskazujący na nic
   ptr = new int(5);   // wskaźnik wskazuje teraz na wartość 5. jest ona za
-                      // lokowana na stercie
+                      // alokowana na stercie
   std::cout << *ptr << '\n'; // wyświetla 5
   *ptr = *ptr + 3;           // zwiększamy wartość o 3
   std::cout << *ptr << '\n'; // wyświetla 8
