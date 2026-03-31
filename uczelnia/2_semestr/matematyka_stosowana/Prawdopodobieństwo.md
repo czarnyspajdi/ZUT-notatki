@@ -1,3 +1,76 @@
+# Spis tematów
+Oto uporządkowana lista tematów, które pojawiają się w przesłanych przez Ciebie notatkach. Zostały one pogrupowane w logiczne kategorie:
+
+**1. Podstawy rachunku prawdopodobieństwa i zdarzenia losowe**
+
+- Przestrzeń zdarzeń elementarnych (Ω) i pojedyncze zdarzenia elementarne (ω)
+    
+- Zbiory przeliczalne
+    
+- Działania na zbiorach i zdarzeniach (dopełnienie, suma, przekrój)
+    
+- Zdarzenie niemożliwe i zdarzenia wykluczające się
+    
+- Przestrzenie mierzalne i zbiory borelowskie
+    
+
+**2. Definicje i miary prawdopodobieństwa**
+
+- Klasyczna definicja prawdopodobieństwa (Laplace'a) dla przestrzeni skończonych
+    
+- Miara Lebesgue'a (odnosząca się do długości, pola i objętości)
+    
+- Prawdopodobieństwo geometryczne i pojęcie miary bezatomowej
+    
+
+**3. Zmienna losowa i statystyka opisowa (charakterystyki zmiennej)**
+
+- Definicja zmiennej losowej jako funkcji
+    
+- Dystrybuanta i jej własności (ciągłość, granice w nieskończoności)
+    
+- Miary rozproszenia: Wariancja, odchylenie standardowe (σ) i współczynnik zmienności
+    
+- Miary położenia: Kwantyle, mediana, kwartyle, centyle (oraz ich praktyczne zastosowanie, np. do mierzenia długości dziecka)
+    
+- Miary asymetrii rozkładu (np. wydłużony ogon, na przykładzie rozkładu płac)
+    
+- Wartości skrajne (konieczność ich odrzucania przy pomiarach)
+    
+- Dominanta (moda)
+    
+
+**4. Rozkłady prawdopodobieństwa**
+
+- **Rozkłady dyskretne (skokowe):**
+    
+    - Rozkład zero-jedynkowy (0-1)
+        
+    - Rozkład dwumianowy (wzmianka o trójkącie Pascala)
+        
+    - Rozkład geometryczny (ciąg geometryczny z parametrami _p_ i _q_)
+        
+    - Rozkład Poissona
+        
+- **Zmienne i rozkłady typu ciągłego:**
+    
+    - Związek dystrybuanty z całką (pole pod wykresem)
+        
+    - Rozkład wykładniczy
+        
+    - Rozkład normalny (funkcja Gaussa)
+        
+
+**5. Wektory losowe i zagadnienia zaawansowane**
+
+- Niezależność zmiennych losowych
+    
+- Wektory losowe (w tym wektory typu skokowego) i ich dystrybuanty
+    
+- Charakterystyki wektora losowego
+    
+- Twierdzenia graniczne (jako temat zamykający)
+
 # Zdarzenia losowe
 ## Jak wygląda przestrzeń zdarzeń elementarnych?
 zdarzenie – $\omega$ 
@@ -122,3 +195,27 @@ Dystrybuanta wektora losowego
 
 Wektor losowy typu skokowego
 
+# Charakterystyki wektora losowego centralne, twierdzenia graniczne i elementy statystyki opisowej
+Ostatni temat z prawdopodobieństwa.
+
+Zmienne dwuwymiarowe.
+
+Kowariancja jest symetryczna
+
+Kowariancja to miara określające siłę oraz zależność dwóch zmiennych losowych.
+
+Suma zmiennych to suma wariancji +- suma kowariancji
+
+Jeżeli zmienne X i Y są niezależne to kowariancja jest 0. Tego twierdzenia nie można odwrócić.
+
+Współczynnik korelacji liniowej Pearsona.
+
+Macierz kowariancji (momentów)
+
+Nie rozumiem co tu się dzieje.
+
+Centralne twierdzenie graniczne — jeśli ciąg zmiennych losowych $Y_{n\space n \in N}$ jest zbieżny według rozkładu do zmiennej losowej Y o rozkładzie $N(0,1)$
+
+Twierdzenie Lindberga - Levy'ego i Moivre'a - Laplace'a
+
+Elementy statystyki opisowej
