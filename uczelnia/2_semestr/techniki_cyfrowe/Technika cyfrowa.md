@@ -11,3 +11,5 @@ Postać standardowa funkcji boolowskiej może być sumacyjna lub iloczynowa, mog
 Nudy gówno tralalalalalal
 
 rlc sratata
+
+Czas propagacji na wykresie czasu to przesunięcie zielonej linii.
