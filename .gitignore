@@ -3,6 +3,6 @@
 .trash
 .idea
 *.out
+*/out
 .Rhistory
 main
-
