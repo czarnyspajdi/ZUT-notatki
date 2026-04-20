@@ -219,3 +219,30 @@ Centralne twierdzenie graniczne — jeśli ciąg zmiennych losowych $Y_{n\space 
 Twierdzenie Lindberga - Levy'ego i Moivre'a - Laplace'a
 
 Elementy statystyki opisowej
+
+# Szereg statystyczny
+- Prosty – uporządkowany niemalejąco
+- Punktowy – dla cech skokowych (na wykresie kropki)
+- Przedziałowy – dla cech ciągłych (na wykresie takie prostokąciki)
+
+# Statystyka i estymacja
+## Definicje
+- Cecha – zmienna losowa
+- Badanie próbne – wysoce wiarygodne, ale estymowane na podstawie próbki, więc nieidealne
+- Estymacja – policzenie próbki i uogólnienie wyników
+- Weryfikacja hipotez
+
+- Próba losowa prosta – mamy zmienną losową X. Ciąg zmiennych $X_1$, $X_2$, ..., nazywamy n-elementową statystyczną próba losowa prosta. Jeśli zmienne są niezależnie i rozkłada $X_i$ nie jest taki sam jak rozkład X.
+- Statystyka – dowolna funkcja statystyczna
+
+## Średnia z próby
+Przy zmiennych losowych o rozkładzie normalnym, średnia artymetyczna z próby ma rozkład normalny.
+
+
+## Estymacja punktowa
+Mamy nieznane $\theta$ rozkładu zmiennej losowej X.
+Estymator $\theta$ rozkładu zmiennej X nazywamy dowolną statystyką, której wartości przyjmujemy za ocenę wielkości parametru $\theta$
+
+Używając lepszego estymatora otrzymujemy większą dokładność.
+
+Sprawdzenie efektywności umożliwia nierówność Rao-Cramera.

@@ -13,3 +13,5 @@ Nudy gówno tralalalalalal
 rlc sratata
 
 Czas propagacji na wykresie czasu to przesunięcie zielonej linii.
+
+Verlilog, jakaś płytka z diodą
