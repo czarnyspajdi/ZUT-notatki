@@ -1,7 +1,8 @@
-from itertools import product
 from collections import Counter, defaultdict, deque
+from itertools import product
 
 # zadanie 1
+
 
 def zad1():
     tekst = """Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
@@ -15,24 +16,29 @@ feugiat in. Fusce ut placerat orci nulla. Pharetra vel turpis nunc eget lorem do
 senectus et netus et malesuada.
 """
     wyrazy: set = set()
-    
+
     for word in tekst.lower().replace(".", "").replace(",", "").strip().split(" "):
         wyrazy.add(word)
     print(wyrazy)
 
+
 # zadanie 2
+
 
 def zad2():
     A = {1, 2, 3, 4, 5}
     B = {2, 4, 5}
 
-    if A < B: print("A jest podzbiorem B")
-    if A > B: print("A jest nadzbiorem B")
+    if A < B:
+        print("A jest podzbiorem B")
+    if A > B:
+        print("A jest nadzbiorem B")
 
     print(f"Przecięcie: {A.intersection(B)}")
     print(f"Suma: {A.union(B)}")
     print(f"Różnica: {A.difference(B)}")
     print(f"Różnica symetryczna: {A.symmetric_difference(B)}")
+
 
 # zadanie 3
 def zad3():
@@ -40,15 +46,15 @@ def zad3():
     B = {2, 4, 5}
     print(f"Iloczyn kartezjański: {list(product(A, B))}")
 
+
 def zad3_wlasne():
     A = {1, 2, 3, 4, 5}
     B = {2, 4, 5}
     iloczyn: set = set()
     for x in A:
         for y in B:
-            iloczyn.add((x,y))
+            iloczyn.add((x, y))
     print(f"Iloczyn kartezjański: {iloczyn}")
-
 
 
 # zadanie 4
@@ -64,19 +70,20 @@ def zad4():
         else:
             urodziny[name] = input("Taki wpis nie istnieje. Podaj datę urodzin: ")
 
+
 # zadanie 5
 def zad5():
     slownik: dict = {
-            "1" : "jeden",
-            "2" : "dwa",
-            "3" : "trzy",
-            "4" : "cztery",
-            "5" : "pięć",
-            "6" : "sześć",
-            "7" : "siedem",
-            "8" : "osiem",
-            "9" : "dziewięć",
-            }
+        "1": "jeden",
+        "2": "dwa",
+        "3": "trzy",
+        "4": "cztery",
+        "5": "pięć",
+        "6": "sześć",
+        "7": "siedem",
+        "8": "osiem",
+        "9": "dziewięć",
+    }
     tekst = input("Podaj liczbę od 1 do 99: ")
     if tekst == "10":
         result = "dziesięć"
@@ -96,10 +103,11 @@ def zad5():
                 result += "dzieści"
             case "5" | "6" | "7" | "8" | "9":
                 result += "dziesiąt"
-        
+
         if tekst[1] != "0":
             result += f" {slownik[tekst[1]]}"
     print(result)
+
 
 # zadanie 6
 def zad6():
@@ -114,11 +122,12 @@ feugiat in. Fusce ut placerat orci nulla. Pharetra vel turpis nunc eget lorem do
 senectus et netus et malesuada.
 """
     wyrazy: Counter = Counter()
-    
+
     for word in tekst.lower().replace(".", "").replace(",", "").strip().split(" "):
         wyrazy[word] += 1
     print(wyrazy)
-    
+
+
 # zadanie 7
 def zad7():
     slownik: defaultdict = defaultdict(lambda: 5)
@@ -126,6 +135,7 @@ def zad7():
         klucz = input("Podaj klucz: ")
         print(f"Aktualna wartość pod kluczem: {klucz} to: {slownik[klucz]}")
         slownik[klucz] += 1
+
 
 # zadanie 8
 def zad8():
