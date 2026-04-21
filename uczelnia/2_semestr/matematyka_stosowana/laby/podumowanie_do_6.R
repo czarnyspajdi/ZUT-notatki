@@ -229,12 +229,15 @@ n = 2000
 p = 0.002
 q = 1 - p
 
-sum(dbinom(5:12, n, p))
+sum(dbinom(6:12, n, p))
 if (n >= 50 & n * p <= 10) {
-  sum(dpois(5:12, n * p))
+  sum(dpois(6:12, n * p))
 }
 
+p = q
+q = 0.002
 
-sum(dbinom(1992:2000, n, p, F))
+sum(dbinom(1992:2000, n, p))
+pnorm(1992, n * p, sqrt(n * p * q), F)
 
  
