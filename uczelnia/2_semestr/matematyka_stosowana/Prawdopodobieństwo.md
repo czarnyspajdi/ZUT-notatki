@@ -246,3 +246,7 @@ Estymator $\theta$ rozkładu zmiennej X nazywamy dowolną statystyką, której w
 Używając lepszego estymatora otrzymujemy większą dokładność.
 
 Sprawdzenie efektywności umożliwia nierówność Rao-Cramera.
+
+
+# Istotna uwaga
+Przy interpretacji przedziału ufności nie należy stosować następującego sformułowania: „parametr z prawdopodobieństwem należy do przedziału w okolicach (...)”, ponieważ parametr nie zalezy od wyników próby losowej. Jest stałą. Zmienny jest natomiast przedział ufności, którego końce zależą od próby  losowej.
