@@ -26,6 +26,10 @@ public:
 
   Ulamek() : licznik(0), mianownik(1) {}
 
+  explicit operator double() const {
+    return static_cast<double>(licznik) / mianownik;
+  }
+
   Ulamek operator+(const Ulamek &inny_ulamek) const {
     return Ulamek(licznik * inny_ulamek.mianownik +
                       inny_ulamek.licznik * mianownik,
@@ -79,37 +83,28 @@ public:
     os << u.licznik << '/' << u.mianownik;
     return os;
   }
+  friend std::istream &operator>>(std::istream &is, Ulamek &u) {
+    char separator;
+    int licznik, mianownik;
+    is >> licznik >> separator >> mianownik;
+
+    if (mianownik == 0) {
+      is.setstate(std::ios::failbit); // nadmiarowe, bo w konstruktorze też 
+                                      // sprawdzamy czy mianownik == 0
+    }
+
+    if (is) {
+      u = Ulamek(licznik, mianownik);
+    }
+    return is;
+  }
 };
 
-Ulamek stworz_ulamek() {
-  int licznik, mianownik;
-  std::cout << "Podaj licznik: ";
-  std::cin >> licznik;
-  std::cout << "Podaj mianownik: ";
-  std::cin >> mianownik;
-  return Ulamek(licznik, mianownik);
-}
-
 int main() {
-  Ulamek u1 = stworz_ulamek();
-  std::cout << "Ulamek 1: " << u1 << std::endl;
-  Ulamek u2 = stworz_ulamek();
-  std::cout << "Ulamek 2: " << u2 << std::endl;
-  std::cout << "=== OPERACJE ===" << std::endl;
-  std::cout << "Dodawanie: " << u1 + u2 << std::endl;
-  std::cout << "Odejmowanie: " << u1 - u2 << std::endl;
-  std::cout << "Mnożenie: " << u1 * u2 << std::endl;
-  try {
-    std::cout << "Dzielenie: " << u1 / u2 << std::endl;
-  } catch (const std::invalid_argument &e) {
-    std::cout << "Błąd: " << e.what() << std::endl;
-  }
-  std::cout << "=== PORÓWNYWANIE ===" << std::endl;
-  std::cout << std::boolalpha;
-  std::cout << u1 << " == " << u2 << ": " << (u1 == u2) << std::endl;
-  std::cout << u1 << " != " << u2 << ": " << (u1 != u2) << std::endl;
-  std::cout << u1 << " <= " << u2 << ": " << (u1 <= u2) << std::endl;
-  std::cout << u1 << " >= " << u2 << ": " << (u1 >= u2) << std::endl;
-  std::cout << u1 << " < " << u2 << ": " << (u1 < u2) << std::endl;
-  std::cout << u1 << " > " << u2 << ": " << (u1 > u2) << std::endl;
+  Ulamek ulamek;
+  std::cin >> ulamek;
+  // double ulamek_double = ulamek; ta linia się nie skompiluje, ponieważ k
+  // onwersja musi być explicit
+  double ulamek_double = double(ulamek);
+  std::cout << ulamek_double;
 }
