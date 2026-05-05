@@ -250,3 +250,42 @@ Sprawdzenie efektywności umożliwia nierówność Rao-Cramera.
 
 # Istotna uwaga
 Przy interpretacji przedziału ufności nie należy stosować następującego sformułowania: „parametr z prawdopodobieństwem należy do przedziału w okolicach (...)”, ponieważ parametr nie zalezy od wyników próby losowej. Jest stałą. Zmienny jest natomiast przedział ufności, którego końce zależą od próby  losowej.
+
+# Parametryczne testy istotności
+Weryfikacja hipotezy dotyczącej wariancji
+- Obszar krytyczny K – Lewo prawo, oba
+Jakieś dziwne znaczki.
+--- 
+Przykład:
+$s = 1.5$
+$n = 10$
+$\alpha = 0.05$
+Teza: odchylenie standardowe pomiarów różni się od $1.0$ na poziomie istotności $0.05$
+
+1) Hipotezy
+$$
+\begin{align}
+h_0 = \chi = 1 \\
+h_1 = \chi ≠ 1
+\end{align}
+$$
+
+2) stat testowa
+$$
+\chi^2 = \frac{ns^2}{\sigma^2} = \frac{10 \times 1.5^2}{1^2} = 22.5
+$$
+3) Kwantyle
+$$
+\begin{align}
+\chi^2(\frac{\alpha}{2}, n - 1) = \chi&2(0.025, 9) = 2.700 \\
+\chi^2(1 -\frac{\alpha}{2}, n - 1) = \chi&2(0.0975, 9) = 19.023
+\end{align}
+$$
+4) Obszar krytyczny
+$$
+k = <0;2.700> u <10.023;∞>
+$$
+5) Wniosek
+$\chi^2-2.5 e K$, więc na poziomie istotności 0.05 odrzucamy $H_0$ 
+
+
