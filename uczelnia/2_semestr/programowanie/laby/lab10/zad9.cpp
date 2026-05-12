@@ -23,12 +23,12 @@ class Pracownik {
 protected:
   std::string imie;
   float pensja;
-  Adres *adres;
+  std::unique_ptr<Adres> adres;
 
 public:
   virtual float obliczWyplate() = 0;
-  Pracownik(std::string imie, float pensja, Adres *adres)
-      : imie(imie), pensja(pensja), adres(adres) {}
+  Pracownik(std::string imie, float pensja, std::unique_ptr<Adres> adres)
+      : imie(imie), pensja(pensja), adres(std::move(adres)) {}
   virtual ~Pracownik() = default;
   friend std::ostream &operator<<(std::ostream &os, Pracownik &p) {
     os << p.imie << " zarabia " << p.obliczWyplate() << " i mieszka na "
@@ -40,8 +40,8 @@ public:
 class PracownikEtatowy : public Pracownik {
 
 public:
-  PracownikEtatowy(std::string imie, float pensja, Adres *adres)
-      : Pracownik(imie, pensja, adres) {}
+  PracownikEtatowy(std::string imie, float pensja, std::unique_ptr<Adres> adres)
+      : Pracownik(imie, pensja, std::move(adres)) {}
 
   float obliczWyplate() override { return pensja; }
 };
@@ -50,8 +50,9 @@ class Zleceniobiorca : public Pracownik {
   float godziny;
 
 public:
-  Zleceniobiorca(std::string imie, float pensja, Adres *adres, float godziny)
-      : Pracownik(imie, pensja, adres), godziny(godziny) {}
+  Zleceniobiorca(std::string imie, float pensja, std::unique_ptr<Adres> adres,
+                 float godziny)
+      : Pracownik(imie, pensja, std::move(adres)), godziny(godziny) {}
   float obliczWyplate() override { return pensja * godziny; }
 };
 
@@ -73,7 +74,7 @@ public:
     return sum;
   }
 
-  void wypiszPracownikow() {
+  void wypiszPracownikow() const {
     std::cout << "=== Wszyscy pracownicy ===\n";
     for (const auto &pracownik : pracownicy) {
       std::cout << *pracownik << std::endl;
@@ -84,10 +85,10 @@ public:
 int main() {
   Dzial dzial = Dzial();
   dzial.dodajPracownika(std::make_unique<PracownikEtatowy>(
-      "Bożena", 2500, new Adres("Żołnierska", 18)));
+      "Bożena", 2500, std::make_unique<Adres>("Żołnierska", 18)));
 
   dzial.dodajPracownika(std::make_unique<Zleceniobiorca>(
-      "Adam", 6700, new Adres("Wiejska", 1), 30));
+      "Adam", 6700, std::make_unique<Adres>("Wiejska", 1), 30));
 
   dzial.wypiszPracownikow();
   std::cout << "Pracownicy sumarycznie zarabiają: " << dzial.sumaWyplat();
