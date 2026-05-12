@@ -57,13 +57,13 @@ public:
 };
 
 class Dzial {
-  std::vector<std::unique_ptr<Pracownik>> pracownicy;
+  std::vector<std::shared_ptr<Pracownik>> pracownicy;
 
 public:
   Dzial() {};
 
-  void dodajPracownika(std::unique_ptr<Pracownik> pracownik) {
-    pracownicy.push_back(std::move(pracownik));
+  void dodajPracownika(std::shared_ptr<Pracownik> pracownik) {
+    pracownicy.push_back(pracownik);
   }
 
   float sumaWyplat() const {
@@ -84,10 +84,10 @@ public:
 
 int main() {
   Dzial dzial = Dzial();
-  dzial.dodajPracownika(std::make_unique<PracownikEtatowy>(
+  dzial.dodajPracownika(std::make_shared<PracownikEtatowy>(
       "Bożena", 2500, std::make_unique<Adres>("Żołnierska", 18)));
 
-  dzial.dodajPracownika(std::make_unique<Zleceniobiorca>(
+  dzial.dodajPracownika(std::make_shared<Zleceniobiorca>(
       "Adam", 6700, std::make_unique<Adres>("Wiejska", 1), 30));
 
   dzial.wypiszPracownikow();
