@@ -11,7 +11,7 @@ public:
 class Pochodna : public Bazowa {
 public:
   Pochodna(int val) : Bazowa(val) {}
-  void wypisz() { std::cout << x << std::endl; }
+  void wypisz() const { std::cout << x << std::endl; }
 };
 
 int main() {

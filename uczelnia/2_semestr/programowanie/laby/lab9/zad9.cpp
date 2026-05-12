@@ -29,11 +29,20 @@ public:
 class Biblioteka {
   Ksiazka *ksiazki;
   int aktualna_ksiazka = 0;
+  int const max_Ksiazki;
 
 public:
-  Biblioteka(size_t size) : ksiazki(new Ksiazka[size]) {}
+  Biblioteka(size_t size) : ksiazki(new Ksiazka[size]), max_Ksiazki(size) {}
+  ~Biblioteka() {
+    delete[] ksiazki;
+    ksiazki = nullptr;
+  }
 
-  void dodajKsiazke(Ksiazka k) { ksiazki[aktualna_ksiazka++] = k; }
+  void dodajKsiazke(Ksiazka k) {
+    if (aktualna_ksiazka < max_Ksiazki) {
+      ksiazki[aktualna_ksiazka++] = k;
+    }
+  }
 
   Ksiazka *szukajPoTytule(std::string tytul) {
     for (int i = 0; i < aktualna_ksiazka; i++) {
@@ -46,7 +55,7 @@ public:
 
   void wypiszWszystkie() {
     for (int i = 0; i < aktualna_ksiazka; i++) {
-      std::cout << ksiazki[i];
+      std::cout << ksiazki[i] << '\n';
     }
   }
 };
