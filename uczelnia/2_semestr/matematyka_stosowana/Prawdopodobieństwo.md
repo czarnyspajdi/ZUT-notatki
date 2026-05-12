@@ -1,6 +1,4 @@
 # Spis tematów
-Oto uporządkowana lista tematów, które pojawiają się w przesłanych przez Ciebie notatkach. Zostały one pogrupowane w logiczne kategorie:
-
 **1. Podstawy rachunku prawdopodobieństwa i zdarzenia losowe**
 
 - Przestrzeń zdarzeń elementarnych (Ω) i pojedyncze zdarzenia elementarne (ω)
@@ -289,3 +287,20 @@ $$
 $\chi^2-2.5 e K$, więc na poziomie istotności 0.05 odrzucamy $H_0$ 
 
 
+# Analiza wariancji
+Pobieramy próbki
+$x_{ij}$ j - ty wynik w  i-tej próbce
+Średnia
+Średnia ogólna – średnia ze wszystkich wyników razem (średnia ważona w grupach)
+Analiza wariancji opiera się na obserewacji Karla Pearcena – jakbyśmy policzyli sumy kwadratów i odjęli średnią ogólną to rozbijemy to ona mierzy zmienność między próbkami. Suma kwadratów odchyleń według grup (resztkowa suma kwadratów) $= q_G$
+Suma odchyleń kwadratów między próbami $= q_P$
+Wszystkie q traktujemy jako realizacje zmiennych losowych Q z indeksem odpowiednim do q.
+Rozkład fishera snedekora.
+
+Test Barteletta jednorodności w wariancji w k populacji.
+Zał: 
+- Jednakowe wariancje
+- Rozkład normalny
+
+Test rangowych znaków dla jednej populacji
+Rangowanie polega na nadawaniu rang wartościom. Przy identycznych wartościach nadajemy średnią artmetyczną rang, które przypadałaby na te wartości.
