@@ -1,7 +1,6 @@
 #include <cstddef>
 #include <iostream>
 #include <memory>
-#include <ostream>
 #include <string>
 #include <vector>
 
@@ -17,11 +16,6 @@ public:
     os << adres.ulica << " mieszkania " << adres.nr_mieszkania;
     return os;
   }
-
-  friend std::ostream &operator<<(std::ostream &os, Adres &adres) {
-    os << adres.ulica << " mieszkania " << adres.nr_mieszkania;
-    return os;
-  }
 };
 
 class Pracownik {
@@ -31,11 +25,14 @@ protected:
   std::unique_ptr<Adres> adres;
 
 public:
-  virtual float obliczWyplate() = 0;
+  virtual float obliczWyplate() const = 0;
+
   Pracownik(std::string imie, float pensja, std::unique_ptr<Adres> adres)
       : imie(imie), pensja(pensja), adres(std::move(adres)) {}
+
   virtual ~Pracownik() = default;
-  friend std::ostream &operator<<(std::ostream &os, Pracownik &p) {
+
+  friend std::ostream &operator<<(std::ostream &os, const Pracownik &p) {
     os << p.imie << " zarabia " << p.obliczWyplate() << " i mieszka na "
        << *(p.adres);
     return os;
@@ -43,12 +40,11 @@ public:
 };
 
 class PracownikEtatowy : public Pracownik {
-
 public:
   PracownikEtatowy(std::string imie, float pensja, std::unique_ptr<Adres> adres)
       : Pracownik(imie, pensja, std::move(adres)) {}
 
-  float obliczWyplate() override { return pensja; }
+  float obliczWyplate() const override { return pensja; }
 };
 
 class Zleceniobiorca : public Pracownik {
@@ -58,14 +54,15 @@ public:
   Zleceniobiorca(std::string imie, float pensja, std::unique_ptr<Adres> adres,
                  float godziny)
       : Pracownik(imie, pensja, std::move(adres)), godziny(godziny) {}
-  float obliczWyplate() override { return pensja * godziny; }
+
+  float obliczWyplate() const override { return pensja * godziny; }
 };
 
 class Dzial {
   std::vector<std::shared_ptr<Pracownik>> pracownicy;
 
 public:
-  Dzial() {};
+  Dzial() = default;
 
   void dodajPracownika(std::shared_ptr<Pracownik> pracownik) {
     pracownicy.push_back(pracownik);
@@ -73,7 +70,7 @@ public:
 
   float sumaWyplat() const {
     float sum = 0;
-    for (auto &pracownik : pracownicy) {
+    for (const auto &pracownik : pracownicy) {
       sum += pracownik->obliczWyplate();
     }
     return sum;
@@ -94,11 +91,11 @@ public:
   Kierownik(std::string imie, float pensja, std::unique_ptr<Adres> adres)
       : PracownikEtatowy(imie, pensja, std::move(adres)) {}
 
-  float obliczWyplate() override { return pensja; }
+  float obliczWyplate() const override { return pensja; }
 
-  float sumaWyplatZespolu() {
+  float sumaWyplatZespolu() const {
     float sum = 0;
-    for (auto &pracownik : podwladni) {
+    for (const auto &pracownik : podwladni) {
       sum += pracownik->obliczWyplate();
     }
     return sum;
@@ -108,8 +105,8 @@ public:
 };
 
 int main() {
-  Kierownik kierownik = Kierownik(
-      "Stasiek", 238943, std::make_unique<Adres>("Wojska polskiego", 23));
+  Kierownik kierownik("Stasiek", 238943,
+                      std::make_unique<Adres>("Wojska polskiego", 23));
 
   kierownik.dodajPracownika(std::make_shared<PracownikEtatowy>(
       "Bożena", 2500, std::make_unique<Adres>("Żołnierska", 18)));
@@ -118,6 +115,7 @@ int main() {
       "Adam", 6700, std::make_unique<Adres>("Wiejska", 1), 30));
 
   std::cout << "Pracownicy sumarycznie zarabiają: "
-            << kierownik.sumaWyplatZespolu();
+            << kierownik.sumaWyplatZespolu() << std::endl;
+
   return 0;
 }
