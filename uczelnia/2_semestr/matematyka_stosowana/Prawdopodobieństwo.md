@@ -304,3 +304,13 @@ Zał:
 
 Test rangowych znaków dla jednej populacji
 Rangowanie polega na nadawaniu rang wartościom. Przy identycznych wartościach nadajemy średnią artmetyczną rang, które przypadałaby na te wartości.
+
+# Regresje I i II rodzaju
+## I rodzaj
+Funkcja regresji liniowej I rodzaju zmiennej Y względem zmiennej X jest zbiorem punktów $(x, g_2(x)) \in R^2$  
+
+__Zadanie 27.7 prezentacja wykład 12 na egzaminie__
+
+## Rodzaj II
+Funkcję, której przewidywaną postać wyznacza się metodą mniejszych kwadraatów minimalizując wyrażenie $E(Y - g(X))^2$, nazywamy funkcją regresji II rodzaju
+
