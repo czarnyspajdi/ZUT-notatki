@@ -5,6 +5,7 @@ podwoj(2, 3); // funkcja przyjmuje jeden argument a jest wywołana z dwoma
 // Fragment B
 template <typename T> T iloczyn(T a, T b);
 // definicja w innym pliku .cpp - kod się nie linkuje
+// należy dodać #include "nazwa_pliku.cpp"
 
 // Fragment C
 template <typename T> T wiekszy(T a, T b) { return a > b ? a : b; }
